@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Crypto Refills — Pay Mobile Top-Ups, Gift Cards &amp; Bills with Crypto Guide (2026)</title>
+  <meta name="description" content="Complete Crypto Refills guide (2026): how to pay for mobile top-ups, gift cards, prepaid data, and utility bills using Bitcoin, Ethereum, and other cryptocurrencies. Step-by-step guide, supported countries, supported coins, fees, safety tips, and a deep FAQ.">
+  <meta name="author" content="Crypto Finance Experts">
+  <link rel="canonical" href="https://crypto-refills-guide.example.com/">
+  <link rel="icon" type="image/png" href="cr.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://crypto-refills-guide.example.com/">
+  <meta property="og:title" content="Crypto Refills — Pay Mobile Top-Ups &amp; Gift Cards with Crypto (2026)">
+  <meta property="og:description" content="How to use Crypto Refills to pay mobile top-ups, gift cards, and bills with Bitcoin, Ethereum, USDT, and more — step-by-step guide with safety tips.">
+  <meta property="og:image" content="cover.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crypto Refills — Crypto Payments for Mobile &amp; Gift Cards (2026)">
+  <meta name="twitter:description" content="Complete guide to using Crypto Refills: supported countries, coins, fees, how to pay mobile top-ups and gift cards with crypto safely.">
+
+  <style>
+    :root {
+      --or:   #F97316;
+      --or2:  #EA580C;
+      --or3:  #C2410C;
+      --ora:  #FED7AA;
+
+      --ink:  #1C1917;
+      --sub:  #292524;
+      --body: #44403C;
+      --muted:#78716C;
+      --dim:  #A8A29E;
+
+      --bg:   #FAFAF9;
+      --bg2:  #F5F5F4;
+      --bg3:  #E7E5E4;
+      --card: #FFFFFF;
+      --line: rgba(0,0,0,.08);
+      --line-o:rgba(249,115,22,.18);
+
+      --ok:   #16A34A;
+      --warn: #D97706;
+      --err:  #DC2626;
+
+      --r:  12px;
+      --rl: 18px;
+      --gap: 1.2rem;
+      --sh: 0 1px 4px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.06);
+      --sh-md: 0 2px 8px rgba(0,0,0,.08), 0 8px 28px rgba(0,0,0,.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+    html { scroll-behavior: smooth }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--body);
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    a { color: var(--or2); text-decoration: none }
+    a:hover { text-decoration: underline }
+    img { max-width: 100%; height: auto; display: block }
+    strong { color: var(--ink); font-weight: 700 }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 1.4rem }
+
+    /* TYPE */
+    h1,h2,h3,h4 { color: var(--ink); line-height: 1.25 }
+    h1 { font-size: clamp(2rem,5vw,3.1rem); font-weight: 800; letter-spacing: -.4px }
+    h2 { font-size: clamp(1.2rem,2.4vw,1.65rem); font-weight: 700; margin-top: 1.8rem; padding-top: .7rem; border-top: 1px solid var(--line) }
+    h3 { font-size: 1.06rem; font-weight: 700; color: var(--sub) }
+    p,li,td,th { font-size: 1rem; line-height: 1.75 }
+    .lead { font-size: 1.08rem; color: var(--sub) }
+
+    /* HERO */
+    header.hero {
+      background: linear-gradient(160deg, #FFF7ED 0%, #FAFAF9 60%);
+      padding: clamp(2.5rem,6vw,5rem) 0 clamp(2rem,4vw,3.5rem);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-card {
+      background: var(--card);
+      border: 1px solid var(--line-o);
+      border-radius: var(--rl);
+      padding: clamp(1.6rem,3.5vw,2.4rem);
+      box-shadow: var(--sh-md);
+    }
+    .brand-row { display: flex; align-items: center; gap: .9rem; margin-bottom: 1rem }
+    .brand-logo {
+      width: 54px; height: 54px; border-radius: 13px;
+      border: 1px solid rgba(249,115,22,.22);
+      background: #FFF7ED;
+      padding: .3rem; object-fit: contain;
+      box-shadow: 0 2px 8px rgba(249,115,22,.15);
+      flex: 0 0 auto;
+    }
+    .brand-label { color: var(--dim); font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .4px }
+    .brand-sub   { color: var(--muted); font-size: .85rem }
+
+    /* CTA */
+    .cta-center { display: flex; justify-content: center; margin-top: 2rem }
+    .cta {
+      display: inline-flex; align-items: center; gap: .7rem;
+      background: linear-gradient(135deg, #FB923C 0%, #F97316 40%, #EA580C 80%, #C2410C 100%);
+      color: #fff;
+      padding: 1.2rem 3rem;
+      border-radius: 16px;
+      font-weight: 900; font-size: 1.15rem; letter-spacing: .15px;
+      box-shadow:
+        0 0 0 1px rgba(249,115,22,.25),
+        0 4px 14px rgba(234,88,12,.30),
+        0 16px 40px rgba(194,65,12,.22);
+      border: none; cursor: pointer; text-decoration: none;
+      transition: transform .18s, box-shadow .18s, filter .18s;
+    }
+    .cta:hover {
+      transform: translateY(-3px) scale(1.025); filter: brightness(1.06); color: #fff;
+      text-decoration: none;
+      box-shadow:
+        0 0 0 1px rgba(249,115,22,.38),
+        0 6px 20px rgba(234,88,12,.38),
+        0 22px 50px rgba(194,65,12,.28);
+    }
+    .cta-icon { font-size: 1.25rem }
+
+    /* NOTE */
+    .note {
+      border-left: 3px solid var(--or);
+      padding: .8rem 1rem;
+      background: #FFF7ED;
+      border-radius: 0 9px 9px 0;
+      color: #7C2D12;
+      margin-top: 1rem;
+    }
+
+    /* STEPS */
+    section.step-guide {
+      background: var(--bg2);
+      padding: clamp(2rem,5vw,3.5rem) 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .steps { display: grid; gap: var(--gap); grid-template-columns: 1fr }
+    .step {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--or);
+      border-radius: var(--r);
+      padding: 1.25rem;
+      box-shadow: var(--sh);
+      transition: transform .18s, box-shadow .18s;
+    }
+    .step:hover { transform: translateY(-3px); box-shadow: var(--sh-md) }
+    .step .icon {
+      width: 44px; height: 44px; border-radius: 9px;
+      display: inline-grid; place-items: center;
+      background: #FFF7ED;
+      margin-bottom: .65rem;
+      font-weight: 800; font-size: .95rem; color: var(--or2);
+      border: 1px solid rgba(249,115,22,.22);
+    }
+
+    /* CARD */
+    main { padding-top: .5rem }
+    main .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 1.5rem;
+      margin: 1.2rem 0;
+      box-shadow: var(--sh);
+    }
+    main .card > h2:first-child { margin-top: 0; border-top: none; padding-top: 0 }
+
+    /* TOC */
+    .toc {
+      border: 1px solid var(--line-o);
+      background: #FFF7ED;
+      border-radius: var(--r);
+      padding: 1.1rem 1.3rem;
+    }
+    .toc strong { color: var(--ink) }
+    .toc ul { margin: .5rem 0 0; padding-left: 1.1rem }
+    .toc li { margin: .28rem 0; font-size: .96rem }
+    .toc a { font-weight: 600 }
+
+    /* GRID */
+    .grid-2 { display: grid; gap: var(--gap); grid-template-columns: 1fr }
+    .callout-grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; margin-top: .8rem }
+    .mini {
+      background: var(--bg2);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 1rem;
+    }
+    .mini h3 { margin-bottom: .35rem }
+    .kpi-badges { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .55rem }
+    .kpi-badges span {
+      border: 1px solid rgba(249,115,22,.25);
+      background: #FFF7ED;
+      color: var(--or2);
+      padding: .26rem .54rem;
+      border-radius: 999px; font-size: .87rem; font-weight: 700;
+    }
+
+    /* COIN BADGES */
+    .coin-grid { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .8rem }
+    .coin {
+      background: var(--bg2); border: 1px solid var(--line);
+      border-radius: 8px; padding: .4rem .75rem;
+      font-size: .9rem; font-weight: 700; color: var(--sub);
+    }
+
+    /* TABLE */
+    .table-wrap { overflow-x: auto; border-radius: var(--r); border: 1px solid var(--line) }
+    table { width: 100%; border-collapse: collapse; min-width: 460px }
+    th,td { padding: .8rem .95rem; border-bottom: 1px solid var(--line); text-align: left }
+    th { background: #FFF7ED; color: var(--ink); font-weight: 700; font-size: .93rem }
+    tr.hi { background: #FFFBF7 }
+    tr:hover td { background: var(--bg2) }
+    tr:last-child td { border-bottom: none }
+    .ok   { color: var(--ok) }
+    .warn { color: var(--warn) }
+    .err  { color: var(--err) }
+
+    /* EEAT */
+    .eeat {
+      background: var(--card);
+      border: 1px solid var(--line-o);
+      border-radius: var(--r);
+      padding: 1.5rem;
+      box-shadow: var(--sh);
+    }
+    .eeat > h2:first-child { margin-top: 0; border-top: none; padding-top: 0 }
+
+    /* FAQ */
+    .faq-item { border-bottom: 1px solid var(--line); padding: .9rem 0 }
+    .faq-item:last-child { border-bottom: none }
+    .faq-button {
+      all: unset; display: flex; justify-content: space-between; align-items: flex-start;
+      width: 100%; cursor: pointer; gap: 1rem;
+    }
+    .faq-button:focus-visible { outline: 2px solid var(--or); border-radius: 4px }
+    .faq-button h3 { margin: 0; font-weight: 700; font-size: 1rem; line-height: 1.4; color: var(--sub) }
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height .26s ease }
+    .faq-content.open { padding-top: .65rem }
+    .faq-plus { font-weight: 800; font-size: 1.35rem; color: var(--or); flex: 0 0 auto; line-height: 1; transition: transform .2s }
+    .faq-button[aria-expanded="true"] .faq-plus { transform: rotate(45deg) }
+
+    @media(min-width:860px){
+      .steps { grid-template-columns: repeat(4,1fr) }
+      .grid-2 { grid-template-columns: 1fr 1fr }
+      .callout-grid { grid-template-columns: 1fr 1fr }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero" role="banner">
+  <div class="container">
+    <div class="hero-card">
+      <div class="brand-row">
+        <img class="brand-logo" src="cr.png" alt="Crypto Refills logo">
+        <div>
+          <div class="brand-label">Complete How-To Guide</div>
+          <div class="brand-sub">Mobile Top-Ups · Gift Cards · Prepaid Data · Bills · 150+ Countries</div>
+        </div>
+      </div>
+
+      <h1>Crypto Refills</h1>
+      <p class="lead" style="margin-top:.7rem">
+        The complete guide to <strong>Crypto Refills</strong> — a platform that lets you spend
+        <strong>Bitcoin, Ethereum, USDT, and 50+ cryptocurrencies</strong> on everyday needs:
+        <strong>mobile top-ups</strong>, prepaid SIM data, <strong>gift cards</strong> for hundreds
+        of global brands, and utility bills — all delivered instantly to your phone or email,
+        with no account required and full <strong>privacy protection</strong>.
+        Understand how it works, which <strong>countries and carriers</strong> are supported,
+        what the <strong>fees</strong> look like, and how to use it safely.
+      </p>
+
+      <div class="cta-center">
+        <a href="#" class="cta" aria-label="Open Crypto Refills">
+          <span class="cta-icon">⚡</span> Top Up with Crypto Now
+        </a>
+      </div>
+
+      <div class="note">
+        <strong>No account needed:</strong> Crypto Refills does not require registration or KYC
+        for most products. You pay with crypto, provide the recipient's phone number or email,
+        and the top-up or gift card is delivered instantly. It's one of the most practical
+        ways to spend cryptocurrency on real-world goods.
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- STEPS -->
+<section class="step-guide" aria-labelledby="how-works">
+  <div class="container">
+    <h2 id="how-works" style="margin-top:0;border-top:none;padding-top:0;color:var(--ink)">
+      How Crypto Refills Works: Choose → Enter Details → Pay → Delivered Instantly
+    </h2>
+    <div class="steps" role="list">
+      <article class="step" role="listitem">
+        <div class="icon">01</div>
+        <h3>Choose product and country</h3>
+        <p>Select mobile top-up, gift card, or utility bill. Choose the recipient's country and carrier. Crypto Refills covers 150+ countries and hundreds of mobile operators and brands worldwide.</p>
+      </article>
+      <article class="step" role="listitem">
+        <div class="icon">02</div>
+        <h3>Enter recipient details</h3>
+        <p>For mobile top-ups: enter the phone number to receive credit. For gift cards: enter the delivery email. No account registration or personal verification required for most products.</p>
+      </article>
+      <article class="step" role="listitem">
+        <div class="icon">03</div>
+        <h3>Pay with your preferred crypto</h3>
+        <p>Choose from Bitcoin, Ethereum, USDT, USDC, Litecoin, XRP, and 50+ other cryptocurrencies. A payment address is generated and your transaction is monitored for confirmation.</p>
+      </article>
+      <article class="step" role="listitem">
+        <div class="icon">04</div>
+        <h3>Instant delivery confirmed</h3>
+        <p>Once payment confirms on-chain, delivery is instant. Mobile top-ups apply directly to the phone account. Gift cards arrive via email. No waiting, no middlemen, no manual processing.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main class="container" role="main">
+
+  <!-- TOC -->
+  <section class="card toc" aria-label="Table of Contents">
+    <strong>On this page — Crypto Refills:</strong>
+    <ul>
+      <li><a href="#overview">What is Crypto Refills and who is it for</a></li>
+      <li><a href="#products">Products: mobile top-ups, gift cards, prepaid data, and bills</a></li>
+      <li><a href="#countries">Supported countries and mobile carriers</a></li>
+      <li><a href="#coins">Supported cryptocurrencies and payment methods</a></li>
+      <li><a href="#fees">Fees and pricing: what you actually pay</a></li>
+      <li><a href="#how-to">Step-by-step: how to top up a mobile phone with crypto</a></li>
+      <li><a href="#gift-cards">How to buy gift cards with crypto on Crypto Refills</a></li>
+      <li><a href="#privacy">Privacy benefits: why crypto users prefer Crypto Refills</a></li>
+      <li><a href="#safety">Safety and security: risks and how to protect yourself</a></li>
+      <li><a href="#comparison">Crypto Refills vs Bitrefill vs CoinsBee vs eGifter</a></li>
+      <li><a href="#best-practices">Best practices for using Crypto Refills</a></li>
+      <li><a href="#troubleshooting">Troubleshooting: delayed delivery, wrong number, payment issues</a></li>
+      <li><a href="#eeat">Authoritative sources &amp; references</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="card" id="overview">
+    <h2>What Is Crypto Refills and Who Is It For?</h2>
+    <p>
+      <strong>Crypto Refills</strong> is a service that bridges the gap between cryptocurrency holdings
+      and everyday spending needs. It converts your crypto payments into real-world utility —
+      mobile airtime, data bundles, gift cards for shopping and entertainment,
+      and utility bill payments — across 150+ countries without requiring you to first
+      convert crypto to fiat through an exchange.
+    </p>
+    <p>
+      The platform is particularly valuable for three groups: crypto holders who want to
+      spend their assets without selling, individuals sending value to family in countries
+      with limited banking access, and privacy-focused users who prefer not to use
+      traditional payment methods linked to their identity.
+    </p>
+
+    <div class="callout-grid">
+      <div class="mini">
+        <h3>Crypto holders wanting utility</h3>
+        <p style="color:var(--muted)">Spend BTC, ETH, or stablecoins directly on practical needs — no exchange account, no bank transfer, no waiting days for fiat withdrawal. Crypto works like money instantly.</p>
+        <div class="kpi-badges"><span>No fiat conversion</span><span>Instant use</span></div>
+      </div>
+      <div class="mini">
+        <h3>International remittance</h3>
+        <p style="color:var(--muted)">Top up a family member's phone in Nigeria, Mexico, India, or the Philippines instantly from anywhere in the world — significantly faster and often cheaper than traditional remittance services.</p>
+        <div class="kpi-badges"><span>Cross-border</span><span>150+ countries</span></div>
+      </div>
+      <div class="mini">
+        <h3>Privacy-focused users</h3>
+        <p style="color:var(--muted)">No registration, no KYC, no email address required for mobile top-ups. Pay with crypto and receive the product — the minimum data footprint of any payment method.</p>
+        <div class="kpi-badges"><span>No KYC</span><span>No account</span></div>
+      </div>
+      <div class="mini">
+        <h3>Unbanked and underbanked</h3>
+        <p style="color:var(--muted)">In regions where credit cards are scarce or unreliable, crypto provides a direct path to digital services — prepaid data, streaming gift cards, and phone credit — that would otherwise require traditional banking.</p>
+        <div class="kpi-badges"><span>No bank needed</span><span>Global access</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="card" id="products">
+    <h2>Products Available on Crypto Refills</h2>
+
+    <div class="table-wrap">
+      <table aria-label="Product categories">
+        <thead>
+          <tr><th>Product</th><th>What you can buy</th><th>Delivery method</th></tr>
+        </thead>
+        <tbody>
+          <tr class="hi">
+            <td>Mobile top-ups</td>
+            <td>Airtime credit for prepaid phones on any supported carrier</td>
+            <td>Instant — applied directly to the phone number</td>
+          </tr>
+          <tr>
+            <td>Data bundles</td>
+            <td>Prepaid mobile data packages (1GB, 5GB, 10GB etc.) for specific carriers</td>
+            <td>Instant — applied directly to the phone number</td>
+          </tr>
+          <tr class="hi">
+            <td>Gift cards</td>
+            <td>Amazon, Google Play, Apple, Steam, Netflix, Spotify, gaming, shopping, and more</td>
+            <td>PIN/code delivered to email — usually within seconds</td>
+          </tr>
+          <tr>
+            <td>Utility bills</td>
+            <td>Electricity, water, gas, and internet bills in supported countries</td>
+            <td>Payment processed to the utility provider</td>
+          </tr>
+          <tr class="hi">
+            <td>Entertainment &amp; streaming</td>
+            <td>Credits and vouchers for gaming platforms, streaming services, and app stores</td>
+            <td>Code or pin via email</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- COUNTRIES -->
+  <section class="card" id="countries">
+    <h2>Supported Countries and Mobile Carriers on Crypto Refills</h2>
+    <p>
+      Crypto Refills covers <strong>150+ countries</strong> with thousands of carrier and product combinations.
+      Coverage is strongest in regions where mobile top-ups are most commonly used as the primary
+      way people manage phone credit — Africa, Asia, Latin America, and the Middle East.
+    </p>
+
+    <div class="callout-grid">
+      <div class="mini">
+        <h3>Highest coverage regions</h3>
+        <p style="color:var(--muted)">Africa (Nigeria, Kenya, Ghana, South Africa, Egypt), Latin America (Mexico, Brazil, Colombia, Argentina), South &amp; Southeast Asia (India, Pakistan, Philippines, Indonesia, Bangladesh), Middle East, and Europe.</p>
+        <div class="kpi-badges"><span>Africa</span><span>Latin America</span><span>Asia</span><span>Europe</span></div>
+      </div>
+      <div class="mini">
+        <h3>How to verify your country</h3>
+        <p style="color:var(--muted)">Enter the recipient's phone number on the Crypto Refills platform — it will automatically detect the country and available carriers. Always verify carrier availability before initiating a crypto payment.</p>
+        <div class="kpi-badges"><span>Auto-detection</span><span>Verify first</span></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Check before paying:</strong> Coverage for specific carriers changes as new partnerships are added.
+      Always confirm your target country and carrier shows available denominations on the platform
+      before sending any crypto payment — this takes 30 seconds and avoids wasted transactions.
+    </div>
+  </section>
+
+  <!-- COINS -->
+  <section class="card" id="coins">
+    <h2>Supported Cryptocurrencies on Crypto Refills</h2>
+    <p>
+      Crypto Refills accepts a broad range of cryptocurrencies — covering the major assets
+      most holders are likely to have — without requiring you to swap to a specific coin first.
+    </p>
+
+    <div class="coin-grid" role="list" aria-label="Supported cryptocurrencies">
+      <span class="coin">Bitcoin (BTC)</span>
+      <span class="coin">Ethereum (ETH)</span>
+      <span class="coin">USDT (Tether)</span>
+      <span class="coin">USDC</span>
+      <span class="coin">Litecoin (LTC)</span>
+      <span class="coin">XRP</span>
+      <span class="coin">Dogecoin (DOGE)</span>
+      <span class="coin">Bitcoin Cash (BCH)</span>
+      <span class="coin">Solana (SOL)</span>
+      <span class="coin">BNB</span>
+      <span class="coin">MATIC</span>
+      <span class="coin">DASH</span>
+      <span class="coin">+ 40 more</span>
+    </div>
+
+    <div class="note" style="margin-top:1rem">
+      <strong>Stablecoins recommended for predictability:</strong> Because crypto prices fluctuate,
+      paying with USDT or USDC means the product value is exactly what you expect — no surprises
+      from price movement between placing your order and confirming payment.
+      For BTC or ETH payments, note that the fiat equivalent is locked at the time you initiate
+      the payment, but on-chain confirmation needs to happen within the payment window.
+    </div>
+  </section>
+
+  <!-- FEES -->
+  <section class="card" id="fees">
+    <h2>Fees and Pricing: What You Actually Pay on Crypto Refills</h2>
+    <p>
+      Understanding the full cost of a Crypto Refills purchase involves separating
+      platform pricing from network transaction fees.
+    </p>
+
+    <div class="table-wrap">
+      <table aria-label="Fee breakdown">
+        <thead>
+          <tr><th>Cost component</th><th>Amount</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr class="hi">
+            <td>Product price</td>
+            <td>Face value of the top-up or gift card</td>
+            <td>Displayed upfront in USD/EUR before payment — no hidden markup</td>
+          </tr>
+          <tr>
+            <td>Service fee</td>
+            <td>Small % per transaction</td>
+            <td>Charged by Crypto Refills for processing — shown in checkout before confirmation</td>
+          </tr>
+          <tr class="hi">
+            <td>Crypto network fee</td>
+            <td>Varies by blockchain and congestion</td>
+            <td>Paid to miners/validators — not charged by Crypto Refills. Use L2 or low-fee chains (LTC, XRP, MATIC) to minimise this cost</td>
+          </tr>
+          <tr>
+            <td>Exchange rate spread</td>
+            <td>Small spread applied at time of payment</td>
+            <td>Your crypto is converted at the displayed rate — verify the rate before confirming</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <strong>Cost tip:</strong> For small top-ups ($5–$20), paying with Bitcoin mainnet can make
+      the transaction uneconomical due to network fees. Use Litecoin, XRP, Polygon (MATIC),
+      or USDT on TRC-20 for small amounts to keep network fees negligible relative to the product value.
+    </div>
+  </section>
+
+  <!-- HOW TO -->
+  <section class="card" id="how-to">
+    <h2>Step-by-Step: How to Top Up a Mobile Phone with Crypto on Crypto Refills</h2>
+    <ol style="padding-left:1.3rem">
+      <li style="margin-bottom:.6rem">
+        <strong>Go to the official Crypto Refills website</strong> — use a bookmarked URL.
+        Navigate to the Mobile Top-Up section.
+      </li>
+      <li style="margin-bottom:.6rem">
+        <strong>Enter the recipient's phone number</strong> with the country code.
+        The platform automatically identifies the carrier and shows available top-up denominations.
+      </li>
+      <li style="margin-bottom:.6rem">
+        <strong>Select the top-up amount</strong> — choose from available denominations
+        (e.g. $5, $10, $20 equivalent). The amount is shown in both local currency and USD.
+      </li>
+      <li style="margin-bottom:.6rem">
+        <strong>Choose your cryptocurrency</strong> — select the coin you want to pay with.
+        The equivalent crypto amount at the current rate is displayed immediately.
+      </li>
+      <li style="margin-bottom:.6rem">
+        <strong>Review the total cost</strong> — confirm the product amount, service fee,
+        and crypto equivalent before proceeding. No account creation is required at this step.
+      </li>
+      <li style="margin-bottom:.6rem">
+        <strong>Send the exact crypto amount</strong> to the generated payment address
+        within the payment window (typically 15–60 minutes depending on the coin).
+        Send from your wallet — not from an exchange, as exchange withdrawal delays can cause timeouts.
+      </li>
+      <li>
+        <strong>Wait for on-chain confirmation</strong> — once the required confirmations are reached,
+        the top-up is applied to the phone instantly. You receive a confirmation email or on-screen notification.
+      </li>
+    </ol>
+
+    <div class="note">
+      <strong>Critical:</strong> Always send crypto from a personal wallet — not directly from an exchange.
+      Exchange withdrawals can take 10–30 minutes and may cause your payment window to expire.
+      If the window expires, contact Crypto Refills support with your transaction hash before sending again.
+    </div>
+  </section>
+
+  <!-- GIFT CARDS -->
+  <section class="card" id="gift-cards">
+    <h2>How to Buy Gift Cards with Crypto on Crypto Refills</h2>
+    <p>
+      Crypto Refills offers gift cards for hundreds of global and regional brands —
+      from Amazon and Google Play to Netflix, Spotify, Steam, gaming stores,
+      and local retail chains in specific countries.
+    </p>
+
+    <div class="callout-grid">
+      <div class="mini">
+        <h3>Global brand gift cards</h3>
+        <p style="color:var(--muted)">Amazon, Google Play, Apple App Store, Steam, PlayStation, Xbox, Netflix, Spotify — the most commonly requested digital gift cards, available in multiple denominations and regional variants.</p>
+        <div class="kpi-badges"><span>Amazon</span><span>Google Play</span><span>Steam</span><span>Netflix</span></div>
+      </div>
+      <div class="mini">
+        <h3>Delivery and redemption</h3>
+        <p style="color:var(--muted)">Gift card codes are delivered to the email you provide at checkout — typically within seconds of payment confirmation. The code is redeemed directly on the brand's platform. Delivery is irreversible; verify the email address carefully.</p>
+        <div class="kpi-badges"><span>Email delivery</span><span>Instant</span><span>Irreversible</span></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Region lock warning:</strong> Gift cards are often region-specific — an Amazon US card
+      cannot be used on Amazon UK or Amazon DE. Always verify the card's regional validity
+      matches the recipient's account location before purchasing.
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="card" id="privacy">
+    <h2>Privacy Benefits: Why Crypto Users Prefer Crypto Refills Over Traditional Top-Up Services</h2>
+    <p>
+      Traditional mobile top-up and gift card services require credit cards, PayPal accounts,
+      or bank transfers — all linked to your identity. Crypto Refills offers a meaningfully
+      different privacy profile for users who value minimising their data footprint.
+    </p>
+
+    <div class="table-wrap">
+      <table aria-label="Privacy comparison">
+        <thead>
+          <tr><th>Data point</th><th>Traditional top-up service</th><th>Crypto Refills</th></tr>
+        </thead>
+        <tbody>
+          <tr class="hi">
+            <td>Account registration</td>
+            <td class="err">Required (email, name, phone)</td>
+            <td class="ok">Not required for most products</td>
+          </tr>
+          <tr>
+            <td>KYC / identity verification</td>
+            <td class="err">Required for most services</td>
+            <td class="ok">Not required</td>
+          </tr>
+          <tr class="hi">
+            <td>Payment method identity link</td>
+            <td class="err">Card or bank account (fully identifiable)</td>
+            <td class="warn">Crypto address (pseudonymous)</td>
+          </tr>
+          <tr>
+            <td>Transaction history storage</td>
+            <td class="err">Full history stored, may be shared</td>
+            <td class="ok">Minimal data retention</td>
+          </tr>
+          <tr class="hi">
+            <td>Geographic restrictions</td>
+            <td class="err">Often restricted by card issuer country</td>
+            <td class="ok">Accessible from any country with internet</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <strong>Privacy is pseudonymous, not anonymous:</strong> Crypto transactions are recorded on a public blockchain.
+      Your on-chain address is not automatically linked to your identity — but if your address
+      is connected to a KYC exchange, your transaction history may be traceable.
+      Use a self-custody wallet address not tied to a KYC account for maximum privacy.
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section class="card" id="safety">
+    <h2>Safety and Security: Risks and How to Protect Yourself on Crypto Refills</h2>
+
+    <div class="table-wrap">
+      <table aria-label="Safety risks and mitigations">
+        <thead>
+          <tr><th>Risk</th><th>How it occurs</th><th>Protection</th></tr>
+        </thead>
+        <tbody>
+          <tr class="hi">
+            <td>Wrong phone number entered</td>
+            <td>Typo in recipient number — top-up sent to wrong account</td>
+            <td class="err">Irreversible — double-check the number carefully before paying</td>
+          </tr>
+          <tr>
+            <td>Phishing / fake Crypto Refills sites</td>
+            <td>Fake sites mimic the UI and steal your payment or credentials</td>
+            <td class="ok">Bookmark official URL; verify domain before every session</td>
+          </tr>
+          <tr class="hi">
+            <td>Payment window timeout</td>
+            <td>Sending from exchange causes delay, payment expires, funds unallocated</td>
+            <td class="ok">Always send from a personal wallet; contact support with tx hash if timeout occurs</td>
+          </tr>
+          <tr>
+            <td>Wrong gift card region</td>
+            <td>Purchasing a US gift card for a non-US account — unusable</td>
+            <td class="ok">Verify regional validity before purchasing — all sales are final</td>
+          </tr>
+          <tr class="hi">
+            <td>Overpaying due to price movement</td>
+            <td>Sending more crypto than required (e.g. rounding up) — excess may not be refunded</td>
+            <td class="ok">Send the exact displayed amount; use copy-paste for the amount field</td>
+          </tr>
+          <tr>
+            <td>Network fee miscalculation</td>
+            <td>Setting too low a network fee causes transaction to be delayed or stuck</td>
+            <td class="ok">Use recommended fee level from your wallet for time-sensitive payments</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="card" id="comparison">
+    <h2>Crypto Refills vs Bitrefill vs CoinsBee vs eGifter: Which Platform to Use</h2>
+
+    <div class="table-wrap">
+      <table aria-label="Platform comparison">
+        <thead>
+          <tr><th>Feature</th><th>Crypto Refills</th><th>Bitrefill</th><th>CoinsBee</th><th>eGifter</th></tr>
+        </thead>
+        <tbody>
+          <tr class="hi">
+            <td>Mobile top-ups</td>
+            <td class="ok">150+ countries</td>
+            <td class="ok">170+ countries</td>
+            <td class="warn">Limited</td>
+            <td class="err">No</td>
+          </tr>
+          <tr>
+            <td>Gift cards</td>
+            <td class="ok">Hundreds of brands</td>
+            <td class="ok">Extensive</td>
+            <td class="ok">Good selection</td>
+            <td class="ok">US-focused, large</td>
+          </tr>
+          <tr class="hi">
+            <td>No account required</td>
+            <td class="ok">Yes</td>
+            <td class="warn">Optional account</td>
+            <td class="ok">Yes</td>
+            <td class="err">Account required</td>
+          </tr>
+          <tr>
+            <td>Lightning Network support</td>
+            <td class="warn">Limited</td>
+            <td class="ok">Strong</td>
+            <td class="warn">Limited</td>
+            <td class="err">No</td>
+          </tr>
+          <tr class="hi">
+            <td>Supported coins</td>
+            <td class="ok">50+</td>
+            <td class="ok">50+</td>
+            <td class="ok">100+</td>
+            <td class="warn">BTC, ETH, select others</td>
+          </tr>
+          <tr>
+            <td>Privacy focus</td>
+            <td class="ok">High — no KYC</td>
+            <td class="ok">High — no KYC</td>
+            <td class="ok">High — no KYC</td>
+            <td class="warn">Account required</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:1rem">
+      <strong>Choosing the right platform:</strong> For mobile top-ups with the widest country coverage,
+      Bitrefill is the industry leader. For gift card variety with no registration,
+      Crypto Refills and CoinsBee are strong choices. For Lightning Network BTC payments,
+      Bitrefill has the best support. Many users maintain accounts on multiple platforms
+      and compare availability per transaction.
+    </div>
+  </section>
+
+  <!-- BEST PRACTICES -->
+  <section class="card" id="best-practices">
+    <h2>Best Practices for Using Crypto Refills Safely and Cost-Effectively</h2>
+    <ul style="padding-left:1.2rem">
+      <li style="margin-bottom:.5rem"><strong>Always verify the phone number or email before paying</strong> — deliveries are instant and irreversible. A single digit error in the phone number means the credit goes to someone else permanently.</li>
+      <li style="margin-bottom:.5rem"><strong>Pay with stablecoins for predictability</strong> — USDT or USDC eliminates the risk of price movement between order and payment. You pay exactly what the checkout shows.</li>
+      <li style="margin-bottom:.5rem"><strong>Use low-fee chains for small purchases</strong> — for top-ups under $20, use Litecoin, XRP, MATIC, or TRC-20 USDT to keep network fees proportional to the purchase value.</li>
+      <li style="margin-bottom:.5rem"><strong>Send from a personal wallet, not an exchange</strong> — exchange withdrawals introduce unpredictable delays that can cause payment window timeouts. Always send from MetaMask, Trust Wallet, or another self-custody wallet.</li>
+      <li style="margin-bottom:.5rem"><strong>Copy-paste the payment address and amount</strong> — never type crypto addresses or amounts manually. One digit error sends funds to the wrong address or underpays, both potentially unrecoverable.</li>
+      <li style="margin-bottom:.5rem"><strong>Verify gift card regional validity</strong> before purchasing — check whether the card works in the recipient's country and on their specific account region.</li>
+      <li><strong>Bookmark the official Crypto Refills URL</strong> and verify the domain before each session — phishing sites targeting crypto payment services are common, particularly for high-value gift card purchases.</li>
+    </ul>
+  </section>
+
+  <!-- TROUBLESHOOTING -->
+  <section class="card" id="troubleshooting">
+    <h2>Troubleshooting Crypto Refills: Delayed Delivery, Wrong Number, and Payment Issues</h2>
+
+    <h3>"My top-up was paid but the phone didn't receive credit"</h3>
+    <ul style="padding-left:1.2rem">
+      <li>Wait a few minutes — some carriers apply credit with a short delay after confirmation. Check the phone balance after 5–10 minutes.</li>
+      <li>Confirm the on-chain transaction has reached the required confirmations. Payments with very low network fees may still be awaiting confirmation.</li>
+      <li>Contact Crypto Refills support with your transaction hash and the order reference. Do not initiate a second payment before resolving the first.</li>
+    </ul>
+
+    <h3>"I entered the wrong phone number"</h3>
+    <ul style="padding-left:1.2rem">
+      <li>If the top-up has already been applied, this is typically irreversible — the credit belongs to whoever owns that number. Contact support immediately with proof of the error; some cases may be partially resolved depending on the carrier.</li>
+      <li>Always verify the number before paying. Use the platform's number validation feature to confirm the carrier and country match your intent.</li>
+    </ul>
+
+    <h3>"My payment window expired before I could send"</h3>
+    <ul style="padding-left:1.2rem">
+      <li>Do not send the crypto after the window expires — the system may not process it. Contact Crypto Refills support with your details and wait for their guidance.</li>
+      <li>If you have already sent on-chain, provide the transaction hash to support immediately — they can often manually process transactions that arrive after the window if the transaction is verifiable on-chain.</li>
+    </ul>
+
+    <div class="note">
+      <strong>Support contact:</strong> Use the official support channel linked in the Crypto Refills app
+      or official website. Never share your wallet seed phrase or private key with any support contact —
+      this information is never needed for order resolution.
+    </div>
+  </section>
+
+  <!-- EEAT -->
+  <section class="eeat" id="eeat" aria-labelledby="eeat-title">
+    <h2 id="eeat-title">Crypto Refills: Authoritative References &amp; External Sources</h2>
+
+    <h3>Crypto Refills — Official Sources</h3>
+    <ul style="padding-left:1.2rem">
+      <li><a href="https://cryptorefills.com/" target="_blank" rel="noopener nofollow">Crypto Refills — Official Platform</a></li>
+      <li><a href="https://cryptorefills.com/blog/" target="_blank" rel="noopener nofollow">Crypto Refills — Official Blog</a></li>
+    </ul>
+
+    <h3>Comparable Platforms for Reference</h3>
+    <ul style="padding-left:1.2rem">
+      <li><a href="https://www.bitrefill.com/" target="_blank" rel="noopener nofollow">Bitrefill — Crypto Top-Ups &amp; Gift Cards</a></li>
+      <li><a href="https://coinsbee.com/" target="_blank" rel="noopener nofollow">CoinsBee — Crypto Gift Cards</a></li>
+    </ul>
+
+    <h3>Crypto Payments &amp; Privacy Context</h3>
+    <ul style="padding-left:1.2rem">
+      <li><a href="https://bitcoin.org/en/spend-bitcoin" target="_blank" rel="noopener nofollow">Bitcoin.org — How to Spend Bitcoin</a></li>
+      <li><a href="https://ethereum.org/en/use/" target="_blank" rel="noopener nofollow">Ethereum.org — Using Ethereum</a></li>
+      <li><a href="https://www.investopedia.com/terms/c/cryptocurrency.asp" target="_blank" rel="noopener nofollow">Investopedia — Cryptocurrency Overview</a></li>
+    </ul>
+
+    <h3>Security &amp; Safe Practices</h3>
+    <ul style="padding-left:1.2rem">
+      <li><a href="https://revoke.cash/" target="_blank" rel="noopener nofollow">Revoke.cash — Token Approval Manager</a></li>
+      <li><a href="https://blog.chainalysis.com/" target="_blank" rel="noopener nofollow">Chainalysis — Crypto Security Research</a></li>
+      <li><a href="https://www.coinbase.com/learn/crypto-basics" target="_blank" rel="noopener nofollow">Coinbase Learn — Crypto Basics</a></li>
+    </ul>
+
+    <div class="note" style="margin-top:1.2rem">
+      <strong>About:</strong> Prepared by Crypto Finance Experts as a practical, SEO-oriented knowledge base for
+      <em>Crypto Refills</em>: mobile top-ups, gift cards, supported countries and coins, fees, privacy, safety, and step-by-step guides.
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="card" id="faq" aria-labelledby="faq-title">
+    <h2 id="faq-title" style="margin-top:0;border-top:none;padding-top:0">Crypto Refills: Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f1" id="b1">
+        <h3>What is Crypto Refills and what can I buy with it?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f1" class="faq-content" role="region" aria-labelledby="b1">
+        <p>Crypto Refills is a platform that lets you pay for real-world products using cryptocurrency. You can buy mobile top-ups (airtime and data) for phones in 150+ countries, gift cards for hundreds of global brands (Amazon, Google Play, Netflix, Steam), and utility bill payments — all paid with Bitcoin, Ethereum, USDT, and 50+ other cryptocurrencies, without needing a bank account or credit card.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f2" id="b2">
+        <h3>Do I need to create an account to use Crypto Refills?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f2" class="faq-content" role="region" aria-labelledby="b2">
+        <p>No — account registration is not required for most products. For mobile top-ups, you just enter the phone number and pay. For gift cards, you provide an email address for delivery. There is no KYC or identity verification required, making Crypto Refills one of the most privacy-friendly ways to convert crypto into everyday products.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f3" id="b3">
+        <h3>Which cryptocurrencies does Crypto Refills accept?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f3" class="faq-content" role="region" aria-labelledby="b3">
+        <p>Crypto Refills accepts 50+ cryptocurrencies including Bitcoin (BTC), Ethereum (ETH), USDT, USDC, Litecoin (LTC), XRP, Dogecoin (DOGE), Bitcoin Cash (BCH), Solana (SOL), BNB, MATIC, and many more. For small purchases, using low-fee coins like Litecoin, XRP, or USDT on TRC-20 is recommended to avoid paying disproportionate network fees.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f4" id="b4">
+        <h3>How long does a top-up or gift card delivery take?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f4" class="faq-content" role="region" aria-labelledby="b4">
+        <p>Delivery is instant once the required on-chain confirmations are received. The payment confirmation time depends on the cryptocurrency used — Bitcoin typically takes 10–30 minutes for sufficient confirmations; faster coins (LTC, XRP, SOL) confirm in seconds to minutes. Gift card codes appear in the provided email typically within seconds of confirmation. Mobile top-ups apply to the phone account immediately after confirmation.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f5" id="b5">
+        <h3>What happens if I enter the wrong phone number?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f5" class="faq-content" role="region" aria-labelledby="b5">
+        <p>If the top-up has already been processed, it is typically irreversible — the credit is applied to whoever owns that number. Crypto Refills cannot reverse a completed top-up with a carrier. This is why verifying the phone number carefully before paying is critical. Contact support immediately if you notice an error before the payment confirms — there may be a brief window to cancel. Always triple-check the number before sending payment.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f6" id="b6">
+        <h3>Can I use Crypto Refills to top up a phone in another country?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f6" class="faq-content" role="region" aria-labelledby="b6">
+        <p>Yes — this is one of the most popular use cases. You can top up a phone anywhere in the world from your location, as long as the recipient's country and carrier are supported. This makes Crypto Refills an effective remittance tool for sending phone credit to family abroad — often faster and cheaper than traditional remittance services for this specific use case.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f7" id="b7">
+        <h3>Are gift cards purchased on Crypto Refills region-locked?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f7" class="faq-content" role="region" aria-labelledby="b7">
+        <p>Yes — most gift cards are region-specific. An Amazon US gift card works only on Amazon.com, not on Amazon.co.uk or Amazon.de. Similarly, Google Play and Apple App Store cards are tied to specific country storefronts. Always verify that the gift card region matches the recipient's account location before purchasing. The platform typically displays the regional validity — check it carefully as all sales are final.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f8" id="b8">
+        <h3>Why shouldn't I pay from a crypto exchange?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f8" class="faq-content" role="region" aria-labelledby="b8">
+        <p>Exchange withdrawals can take 10–60 minutes to process internally before the transaction is broadcast on-chain. Crypto Refills payment windows are typically 15–60 minutes. If your exchange takes 20 minutes to process the withdrawal, and the payment window is 15 minutes, your payment arrives after expiry and may not be credited. Always send from a self-custody wallet (MetaMask, Trust Wallet, Ledger) to ensure the transaction broadcasts immediately.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-button" aria-expanded="false" aria-controls="f9" id="b9">
+        <h3>Is Crypto Refills safe and legitimate?</h3><span class="faq-plus">+</span>
+      </button>
+      <div id="f9" class="faq-content" role="region" aria-labelledby="b9">
+        <p>Crypto Refills is a legitimate service that has been operating for several years with a track record of successful deliveries. The primary safety risks are user errors (wrong phone number, wrong gift card region) and phishing sites — not platform fraud. Always access the platform through the official bookmarked URL, verify the domain before connecting or paying, and never share wallet credentials with anyone claiming to be Crypto Refills support.</p>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="container" role="contentinfo" style="padding:2.5rem 0; border-top:1px solid var(--line); margin-top:2rem; background:var(--bg)">
+  <p style="color:var(--dim); font-size:.93rem">© 2026 Crypto Refills Guide. Educational content with a security-first focus. Not financial advice.</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-button').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        const c = document.getElementById(b.getAttribute('aria-controls'));
+        c.classList.remove('open'); c.style.maxHeight = '0';
+      });
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        const content = document.getElementById(btn.getAttribute('aria-controls'));
+        content.classList.add('open');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
